@@ -1,17 +1,19 @@
 
-import classes from './main-header.module.css'
 import Link from "next/link";
 
 export default function MainHeader() {
     return (
         <>
+            <header id="main-header" >
+                    <div id="logo">
+                        <Link href="/">NextNews</Link>
+                    </div>
+            <nav>
+                <ul>
+                    <li><Link href={'/news'}>News</Link></li>
+                </ul>
+            </nav>
 
-            <header className={classes.header}>
-
-                    <ul>
-                        <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/news'}>News</Link></li>
-                    </ul>
             </header>
         </>
     );

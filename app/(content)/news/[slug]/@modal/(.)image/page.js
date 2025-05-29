@@ -1,4 +1,5 @@
 
+import ModalBackdrop from "@/components/modal-backdrop";
 import { getNewsItem } from "@/lib/news";
 import { notFound } from "next/navigation";
 
